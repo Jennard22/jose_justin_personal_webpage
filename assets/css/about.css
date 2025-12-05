@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background: #0d0e11;
+    color: white;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 25px 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: rgba(13, 14, 17, 0.95);
+}
+
+.navbar .logo{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar ul li a {
+    font-size: 20px;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.navbar ul li{
+    list-style: none;
+    margin-left: 35px;
+}
+
+.navbar ul li:hover a,
+.navbar ul li.active a{
+    color: rgb(234, 255, 47);
+}
+
+.about-section{
+    padding: 120px 9% 60px;
+    min-height: 100vh;
+}
+
+.about-section h1{
+    font-size: 55px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.about-container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Bio Section */
+.bio-section{
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 40px;
+    margin-bottom: 60px;
+    align-items: center;
+}
+
+.profile-photo{
+    display: flex;
+    justify-content: center;
+}
+
+.photo-box{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(87, 85, 85);
+    border-radius: 50%;
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.photo-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.bio-content h2{
+    font-size: 32px;
+    color: #e0eb4b;
+    margin-bottom: 20px;
+}
+
+.bio-content p{
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* Education Section */
+.education-section{
+    margin-bottom: 60px;
+}
+
+.education-section h2{
+    font-size: 40px;
+    color: #e0eb4b;
+    margin-bottom: 30px;
+}
+
+.education-card{
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.education-card:hover{
+    background: rgba(255, 255, 255, 0.08);
+    border-color: #7e8039;
+    transform: translateX(5px);
+}
+
+.education-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.education-card h3{
+    font-size: 24px;
+    color: #e0eb4b;
+    margin-bottom: 5px;
+}
+
+.education-card h4{
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 500;
+}
+
+.education-date{
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+    font-style: italic;
+}
+
+.education-card p{
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 8px;
+}
+
+/* Skills Section */
+.skills-section h2{
+    font-size: 40px;
+    color: #e0eb4b;
+    margin-bottom: 30px;
+}
+
+.skills-category{
+    margin-bottom: 40px;
+}
+
+.skills-category h3{
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 20px;
+}
+
+.skills-grid{
+    display: grid;
+    gap: 20px;
+}
+
+.skill-item{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.skill-name{
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 500;
+}
+
+.skill-bar{
+    width: 100%;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skill-progress{
+    height: 100%;
+    background: linear-gradient(90deg, #7e8039, #e0eb4b);
+    border-radius: 10px;
+    transition: width 0.3s;
+}
+
+.tools-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.tool-tag{
+    background: #7e8039;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    color: #1f242d;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.tool-tag:hover{
+    background: #e0eb4b;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 768px){
+    .navbar{
+        padding: 20px 5%;
+    }
+
+    .navbar .logo{
+        font-size: 24px;
+    }
+
+    .navbar ul li{
+        margin-left: 15px;
+    }
+
+    .navbar ul li a{
+        font-size: 16px;
+    }
+
+    .about-section{
+        padding: 100px 5% 40px;
+    }
+
+    .about-section h1{
+        font-size: 40px;
+    }
+
+    .bio-section{
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .photo-box{
+        width: 250px;
+        height: 250px;
+    }
+
+    .bio-content h2,
+    .education-section h2,
+    .skills-section h2{
+        font-size: 32px;
+    }
+
+    .education-card h3{
+        font-size: 20px;
+    }
+
+    .skills-category h3{
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+
+body{
+background: #0d0e11;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 25px 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.navbar .logo{
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar ul li a {
+  font-size: 20px;
+  font-weight: 500;
+  transition: .5s;
+}
+
+.navbar ul li{
+    list-style: none;
+    margin-left: 35px;
+}
+
+.navbar ul li:hover a,
+.navbar ul li.active a{
+    color: rgb(234, 255, 47);
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 60px 9% 0;
+    color: white;
+}
+
+
+.home-info h1{
+    font-size: 55px;
+}
+
+.home-info h2{
+    font-size: 32px;
+    margin-top: -10px;
+}
+
+.home-info p{
+    font-size: 16px;
+    margin: 10px 0 25px;
+}
+
+.home-info .btn-sci {
+    display: flex;
+    align-items: center;
+}
+
+
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    background: #7e8039;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #bece79;
+    font-size: 16px;
+    color: #1f242d;
+    font-weight: 600;
+
+}
+
+
+.btn:hover{
+  background: transparent;
+  color: #e0eb4b;
+  box-shadow: none;
+}
+
+.home-info .btn-sci .btn-sci {
+    margin-left: 20px ;
+}
+
+.home-info .btn-sci .btn-sci{
+    display: inline-flex;
+    padding: 8px;
+    border: 2px solid #292b11;
+   border-radius: 30%;
+}
+
+
+.home-img  .img-box{
+    position: relative;
+    width: 32vw;
+    height: 32vw;
+    background-color: rgb(87, 85, 85);
+    border-radius: 50%;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.home-img  .img-box .img-item{
+    position: relative;
+    width: 100%;
+    height: 100;
+    background-color:slateblue;
+    border-radius: 50%;
+    justify-content: center;
+}
+
+
+.home-img  .img-box .img-item img{
+    position: absolute;
+    top: -50px;
+    display: block;
+    width: 85%;
+    object-fit: cover;
+}
+
+
